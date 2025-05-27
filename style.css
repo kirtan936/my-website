@@ -389,7 +389,7 @@ color: var(--other-color);
     width: 45px;
     height: 45px;border-radius: 50%;
     color: var(--text-color);
-    font-size: 27px;
+    font-size: 20px;
 }
 @media(max-width:1700px) {
     header {
