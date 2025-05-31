@@ -24,10 +24,10 @@ body {
 }
 header {
     position: fixed;
-    width: 100%;
     top: 0;
     right: 0;
     z-index: 1000;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,12 +45,17 @@ span {
 }
 .navlist {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .navlist a {
     font-size: var(--p-font);
     font-weight: 500;
     color: var(--other-color);
-    margin-left: 40px;
+    margin: 0 20px;
     transition: all .50s ease;
 }
 .navlist a:hover {
@@ -484,11 +489,14 @@ color: var(--other-color);
         flex-direction: column;
         background: var(--bg-color);
         transition: all .50s ease;
+        transform: none;
+        left: auto;
     }
     .navlist a {
         display: block;
         padding: 17px;
         font-size: 22px;
+        margin: 0;
     }
     .navlist.active {
         right: 0;
@@ -516,3 +524,184 @@ color: var(--other-color);
     margin: 0 auto;
 }
 }
+
+/* Certificates Section */
+.certificates {
+    padding: 100px 15%;
+    background: var(--bg-color);
+}
+
+.certificates-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.certificate-box {
+    background: var(--second-bg-color);
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.certificate-info {
+    text-align: center;
+}
+
+.certificate-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.certificate-info p {
+    color: var(--other-color);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.certificate-info .btn {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* Modal Styles */
+.certificate-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90vh;
+    position: relative;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.close-modal {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Certificates Section */
+.certificates {
+    padding: 100px 15%;
+    background: var(--bg-color);
+}
+
+.certificates-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.certificate-box {
+    background: var(--second-bg-color);
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.certificate-info {
+    text-align: center;
+}
+
+.certificate-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.certificate-info p {
+    color: var(--other-color);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.certificate-info .btn {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* Modal Styles */
+.certificate-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90vh;
+    position: relative;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.close-modal {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
