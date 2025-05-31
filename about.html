@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Kirtan Mistry</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-page {
+            padding-top: 150px;
+        }
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            padding: 2rem;
+        }
+        .about-image {
+            text-align: center;
+        }
+        .about-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 50%;
+            border: 7px solid var(--main-color);
+            box-shadow: 0 0 20px var(--main-color);
+        }
+        .about-text {
+            padding: 2rem;
+        }
+        .skills-section {
+            margin-top: 3rem;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .skill-card {
+            background: var(--second-bg-color);
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px var(--main-color);
+        }
+        .skill-card h4 {
+            color: var(--main-color);
+            margin-bottom: 1rem;
+        }
+        .skill-card p {
+            color: var(--other-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.htm" class="logo">Kirtan's <span>Portfolio</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navlist">
+            <li><a href="index.htm#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="about-page">
+        <div class="center-text" data-aos="fade-down">
+            <h2>About <span>Me</span></h2>
+        </div>
+        <div class="about-content" data-aos="zoom-in-up">
+            <div class="about-image">
+                <img src="img/img/about.png" alt="Kirtan Mistry">
+            </div>
+            <div class="about-text">
+                <h3>IT Undergraduate at CHARUSAT</h3>
+                <p>I'm Kirtan Mistry, an IT undergraduate at CHARUSAT with a strong academic background (GPA: 8.9/10) and a passion for software development. I specialize in Python, C++, Java, C#, .NET, and SQL, with hands-on experience in projects like an Aadhaar Data Extractor using OCR.</p>
+                
+                <div class="exp-area">
+                    <p class="exp">
+                        Experience
+                        <span>2 Years (college exp)</span>
+                    </p>
+                    <p class="exp">
+                        Speciality:
+                        <span>HTML, CSS, JS, SQL, PL-SQL, Python</span>
+                    </p>
+                    <p class="exp">
+                        Address:
+                        <span>Gujarat, India</span>
+                    </p>
+                    <p class="exp">
+                        Email:
+                        <span>kirtanmistry75@gmail.com</span>
+                    </p>
+                    <p class="exp">
+                        Phone:
+                        <span>7046525078</span>
+                    </p>
+                </div>
+
+                <div class="skills-section">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <h4>Programming Languages</h4>
+                            <p>Python, C++, Java, C#</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Web Development</h4>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Database</h4>
+                            <p>SQL, PL-SQL</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Frameworks</h4>
+                            <p>.NET, React</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="copyright">
+            <p>@ copyright Kirtan Mistry</p>
+        </div>
+        <a href="#home" class="scroll-top">
+            <i class="ri-arrow-up-s-fill"><h6>Home</h6></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1400,
+        });
+    </script>
+</body>
+</html> 

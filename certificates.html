@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certificates - Kirtan Mistry</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .certificates-page {
+            padding-top: 150px;
+        }
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .certificate-card {
+            background: var(--second-bg-color);
+            border-radius: 15px;
+            padding: 20px;
+            transition: all 0.4s ease;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .certificate-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        }
+        .certificate-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .certificate-info {
+            text-align: center;
+        }
+        .certificate-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+        .certificate-info p {
+            color: var(--other-color);
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.htm" class="logo">Kirtan's <span>Portfolio</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navlist">
+            <li><a href="index.htm#home">Home</a></li>
+            <li><a href="index.htm#about">About</a></li>
+            <li><a href="index.htm#services">Services</a></li>
+            <li><a href="index.htm#portfolio">Portfolio</a></li>
+            <li><a href="index.htm#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="certificates-page">
+        <div class="center-text" data-aos="fade-down">
+            <h2>My <span>Certificates</span></h2>
+        </div>
+        <div class="certificates-grid" data-aos="zoom-in-up">
+            <!-- Example Certificate 1 -->
+            <div class="certificate-card">
+                <img src="img/img/port-1.jpg" alt="Python Certificate">
+                <div class="certificate-info">
+                    <h3>Python Programming</h3>
+                    <p>Issued by: Coursera</p>
+                    <p>Date: January 2024</p>
+                    <a href="#" class="btn">View Certificate</a>
+                </div>
+            </div>
+
+            <!-- Example Certificate 2 -->
+            <div class="certificate-card">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500" alt="Web Development Certificate">
+                <div class="certificate-info">
+                    <h3>Web Development</h3>
+                    <p>Issued by: Udemy</p>
+                    <p>Date: December 2023</p>
+                    <a href="#" class="btn">View Certificate</a>
+                </div>
+            </div>
+
+            <!-- Example Certificate 3 -->
+            <div class="certificate-card">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500" alt="Data Science Certificate">
+                <div class="certificate-info">
+                    <h3>Data Science</h3>
+                    <p>Issued by: DataCamp</p>
+                    <p>Date: November 2023</p>
+                    <a href="#" class="btn">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="copyright">
+            <p>@ copyright Kirtan Mistry</p>
+        </div>
+        <a href="#home" class="scroll-top">
+            <i class="ri-arrow-up-s-fill"><h6>Home</h6></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1400,
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Kirtan Mistry</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .services-page {
+            padding-top: 150px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .service-card {
+            background: var(--second-bg-color);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: all 0.4s ease;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px var(--main-color);
+        }
+        .service-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1.5rem;
+        }
+        .service-card h3 {
+            color: var(--main-color);
+            margin-bottom: 1rem;
+        }
+        .service-card p {
+            color: var(--other-color);
+            margin-bottom: 1.5rem;
+        }
+        .service-features {
+            text-align: left;
+            margin-top: 1rem;
+        }
+        .service-features li {
+            color: var(--other-color);
+            margin-bottom: 0.5rem;
+            list-style-type: disc;
+            margin-left: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.htm" class="logo">Kirtan's <span>Portfolio</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navlist">
+            <li><a href="index.htm#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="services-page">
+        <div class="center-text" data-aos="fade-down">
+            <h2>My <span>Services</span></h2>
+        </div>
+        <div class="services-grid" data-aos="zoom-in-up">
+            <!-- Web Development Service -->
+            <div class="service-card">
+                <img src="img/img/s-1.svg" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>Custom website development with modern technologies and responsive design.</p>
+                <div class="service-features">
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>Frontend Development</li>
+                        <li>Backend Integration</li>
+                        <li>Database Management</li>
+                    </ul>
+                </div>
+                <a href="contact.html" class="btn">Get Started</a>
+            </div>
+
+            <!-- Software Development Service -->
+            <div class="service-card">
+                <img src="img/img/s-2.svg" alt="Software Development">
+                <h3>Software Development</h3>
+                <p>Custom software solutions tailored to your business needs.</p>
+                <div class="service-features">
+                    <ul>
+                        <li>Desktop Applications</li>
+                        <li>API Development</li>
+                        <li>System Integration</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+                <a href="contact.html" class="btn">Get Started</a>
+            </div>
+
+            <!-- Database Management Service -->
+            <div class="service-card">
+                <img src="img/img/s-3.svg" alt="Database Management">
+                <h3>Database Management</h3>
+                <p>Efficient database design and management solutions.</p>
+                <div class="service-features">
+                    <ul>
+                        <li>Database Design</li>
+                        <li>SQL Optimization</li>
+                        <li>Data Migration</li>
+                        <li>Security Implementation</li>
+                    </ul>
+                </div>
+                <a href="contact.html" class="btn">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="copyright">
+            <p>@ copyright Kirtan Mistry</p>
+        </div>
+        <a href="#home" class="scroll-top">
+            <i class="ri-arrow-up-s-fill"><h6>Home</h6></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1400,
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kirtan Mistry</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-page {
+            padding-top: 150px;
+        }
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            padding: 2rem;
+        }
+        .contact-info {
+            padding: 2rem;
+        }
+        .contact-info h3 {
+            color: var(--main-color);
+            margin-bottom: 1.5rem;
+        }
+        .contact-details {
+            margin-bottom: 2rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--main-color);
+            margin-right: 1rem;
+        }
+        .contact-item p {
+            color: var(--other-color);
+        }
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: var(--second-bg-color);
+            border-radius: 50%;
+            transition: all 0.4s ease;
+        }
+        .social-links a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px var(--main-color);
+        }
+        .social-links img {
+            width: 25px;
+            height: 25px;
+        }
+        .contact-form {
+            background: var(--second-bg-color);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form form {
+            width: 100%;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            background: var(--bg-color);
+            border: none;
+            border-radius: 8px;
+            color: var(--text-color);
+            font-size: 1rem;
+        }
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: var(--main-color);
+            color: var(--bg-color);
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+        .submit-btn:hover {
+            background: transparent;
+            color: var(--main-color);
+            box-shadow: 0 0 20px var(--main-color);
+        }
+        .contact-info-box {
+            background: var(--second-bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 2rem 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.htm" class="logo">Kirtan's <span>Portfolio</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navlist">
+            <li><a href="index.htm#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="contact-page">
+        <div class="center-text" data-aos="fade-down">
+            <h2>Contact <span>Me</span></h2>
+        </div>
+        <div class="contact-container" data-aos="zoom-in-up">
+            <div class="contact-info">
+                <div class="contact-info-box">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="ri-map-pin-line"></i>
+                            <p>Gujarat, India</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ri-mail-line"></i>
+                            <p>kirtanmistry75@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ri-phone-line"></i>
+                            <p>7046525078</p>
+                        </div>
+                    </div>
+                </div>
+                <h3>Connect with Me</h3>
+                <div class="social-links">
+                    <a href="https://github.com/kirtan936" target="_blank">
+                        <img src="img/img/Github-Dark logo.svg" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/kirtanmistry369/" target="_blank">
+                        <img src="img/img/linkedin-icon-3 logo.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kirtanmistry75@gmail.com" target="_blank">
+                        <img src="img/img/gmail logo.svg" alt="Email">
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="copyright">
+            <p>@ copyright Kirtan Mistry</p>
+        </div>
+        <a href="#home" class="scroll-top">
+            <i class="ri-arrow-up-s-fill"><h6>Home</h6></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1400,
+        });
+    </script>
+</body>
+</html> 
